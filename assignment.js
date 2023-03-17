@@ -27,13 +27,26 @@ console.log(arr3);
 var arrFruits = ["apple", "mango", "apple","orange", "mango", "mango"];
 let  finalFruits = [new Set(arrFruits)];
 console.log(finalFruits);
+
+ let uniqueArr = [];
+ arr.forEach(function(arr){
+     if (!uniqueArr.includes(arr))
+     uniqueArr.push(arr);
+ })
  
 // Write a JS script to search for the following word in the array.
 // 4
-let arr5 = ["the", "way", "x", 4, 23];
-const includeFour = arr5.includes(4);
-console.log(includeFour);
+
 // If the word is present, console it else console "the search word was not found"
 // let arr5 = ["the", "way", "x", 4, 23];
+     let arr5 = ["the", "way", "x", 4, 23];
+     const includeFour = arr5.includes(4);
+     console.log(includeFour);
+   
+
 // Write a JS script to sort the following string
 // let word = "lufituaeb"
+let word = "lufituaeb"
+
+console.log(word.split("").sort().join(""));
+
